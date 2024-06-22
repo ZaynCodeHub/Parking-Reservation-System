@@ -4,10 +4,9 @@ This web application simplifies parking spot reservations. Users can reserve spo
 Access the application:
 Open your web browser and navigate to http://localhost/parking-reservation-system/frontend/index.html.
 
-Technologies Used
+Technologies Used,
 Frontend: HTML, CSS, JavaScript
 Backend: PHP
 Database: MySQL
 
-Contact
 Email: syed.zainafaq@gmail.com
