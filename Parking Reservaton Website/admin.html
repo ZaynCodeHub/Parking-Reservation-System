@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARKER - Admin Dashboard</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            overflow: hidden;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            margin-right: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .nav-links li:last-child {
+            margin-right: 0;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: #ff6600;
+        }
+
+        /* Content area styles */
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-right: 10px; /* Added margin to the buttons */
+            margin-bottom: 10px; /* Added margin to the buttons */
+        }
+
+        .btn:hover {
+            background-color: #e96c13;
+        }
+
+        /* Remove dots and numbers from the list */
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <a href="admin.html" class="logo">PARKER - Admin Dashboard</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" id="logoutBtn">Logout</a></li> 
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="content">
+        <h2>Welcome to the Admin Dashboard</h2>
+        <p>Hi Admin, What would you like to perform</p>
+        <h3></h3>
+        <ul>
+            <li><a href="reserve_spots.php" class="btn">View Reservation List</a></li>
+            <li><a href="cancel_reservation.html" class="btn">Cancel Reservation</a></li>
+            <li><a href="generate_report.html" class="btn">Generate Report</a></li>
+            <li><a href="users.php" class="btn">View Users</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    // JavaScript for the logout confirmation dialog
+    document.getElementById('logoutBtn').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default action of the anchor tag
+
+        // Display a confirmation dialog
+        if (confirm("Are you sure you want to logout?")) {
+            // If the admin confirms, redirect to the logout page
+            window.location.href = "index.html"; // Replace with the actual logout page URL
+        }
+    });
+</script>
+
+</body>
+</html>
