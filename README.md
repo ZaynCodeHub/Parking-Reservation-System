@@ -10,6 +10,4 @@ Backend: PHP
 Database: MySQL
 
 Contact
-Name: Syed Zain Afaq
-Username: ZaynCodeHub
 Email: syed.zainafaq@gmail.com
